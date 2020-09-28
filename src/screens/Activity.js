@@ -14,7 +14,7 @@ function Activity(){
                 <FollowCard />
             </View>  
             <View>
-                <Text style={styles.txt}>This Month</Text>
+                <Text style={styles.txt}>Earlier</Text>
             </View>
             <View style={styles.cardContainer}>
               
@@ -35,17 +35,18 @@ const styles = StyleSheet.create({
     container:{
         flex:1,
         flexDirection:"column",
-        backgroundColor:"black"
+        backgroundColor:"white"
         
     },
     cardContainer:{
         alignItems: "center",
         marginTop: 30,
+      
     },
     txt:{
         marginLeft:10,
         fontSize:18,
-        color:"white"
+        color:"black"
     }
 })
 

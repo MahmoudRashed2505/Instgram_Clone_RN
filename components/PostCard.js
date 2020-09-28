@@ -26,20 +26,20 @@ const styles = StyleSheet.create({
     container: {
         width: "100%",
         height: 90,
-        borderRadius: 5,
+        borderRadius: 15,
         borderColor: "white",
         borderWidth: 0.08,
         marginBottom: 10,
-
+        elevation: 2,
+        backgroundColor: "white",
+       
 
     },
     card: {
         width: "100%",
         height: 90,
-        //backgroundColor: "blue",
-        borderRadius: 2,
-        //elevation: 10,
         flexDirection: "row",
+        
     },
     img: {
         width: 60,
@@ -62,11 +62,11 @@ const styles = StyleSheet.create({
     },
     txt:{
         fontSize:16,
-        color:"white"
+        color:"black"
     },
     txtHeader:{
         fontSize: 16,
-        color: "white",
+        color: "black",
         fontWeight:"bold"
     }
   

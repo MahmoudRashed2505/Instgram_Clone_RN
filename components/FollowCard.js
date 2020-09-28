@@ -22,21 +22,20 @@ function FollowCard() {
 
 const styles = StyleSheet.create({
     container: {
-        width:"95%",
-        height:90,
-        borderRadius: 5,
-        borderColor:"white",
-        borderWidth:0.08,
-        marginBottom:10,
+        borderRadius: 15,
+        elevation: 10,
+        backgroundColor: "white",
+        marginHorizontal: 10,
+        marginVertical: 10,
+        display: "flex",
+        flexDirection: "row",
         
        
     },
     card:{
         width: "100%",
-        height: 90,
-        //backgroundColor: "blue",
-        borderRadius: 2,
-        //elevation: 10,
+        height: 100,
+        padding:10,
         flexDirection: "row",
     },
     img:{
@@ -50,7 +49,7 @@ const styles = StyleSheet.create({
         fontSize:16,
         marginTop:15,
         marginLeft:10,
-        color:"white"
+        color:"black"
     },
     txt:{
         marginLeft: 10,
