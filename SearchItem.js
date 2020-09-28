@@ -17,7 +17,7 @@ const styles= StyleSheet.create({
        backgroundColor:"#1f1f1f",
        alignItems:"center",
        alignContent:"center",
-       padding:8
+       padding:10
     },
     item:{
         backgroundColor:"black",
@@ -38,7 +38,7 @@ const styles= StyleSheet.create({
     },
     text:{
        color:"white",
-       fontSize:20,
-       marginLeft:20
+       fontSize:18,
+       marginLeft:15
     },
 })
