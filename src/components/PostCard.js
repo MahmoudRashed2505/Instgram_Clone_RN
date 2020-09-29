@@ -20,25 +20,21 @@ function PostCard(props) {
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
-    height: 90,
     borderRadius: 15,
-    borderColor: 'white',
-    borderWidth: 0.08,
-    marginBottom: 10,
-    elevation: 2,
+    elevation: 10,
     backgroundColor: 'white',
+    marginHorizontal: 10,
+    marginVertical: 10,
+    display: 'flex',
+    flexDirection: 'row',
   },
   card: {
-    width: '100%',
-    height: 90,
     flexDirection: 'row',
   },
   img: {
     width: 60,
     height: 60,
     borderRadius: 5,
-    marginLeft: 20,
     marginTop: 10,
     marginRight: 15,
   },

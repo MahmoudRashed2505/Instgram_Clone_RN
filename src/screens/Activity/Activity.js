@@ -44,8 +44,9 @@ const styles = StyleSheet.create({
     marginTop: 30,
   },
   txt: {
+    paddingLeft: 10,
     marginLeft: 10,
-    fontSize: 18,
+    fontSize: 20,
     color: 'black',
   },
 });
