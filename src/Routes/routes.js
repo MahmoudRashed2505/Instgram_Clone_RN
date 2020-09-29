@@ -13,7 +13,7 @@ export default function routes() {
   return (
     <NavigationContainer>
       <Tab.Navigator>
-        <Tab.Screen name="Home" componen={Home} />
+        <Tab.Screen name="Home" component={Home} />
         <Tab.Screen name="Search" component={SearchComp} />
         <Tab.Screen name="Activity" component={Activity} />
         <Tab.Screen name="Profile" component={Profile} />
