@@ -1,11 +1,11 @@
 import React  from 'react';
-import { View, Text, StyleSheet, FlatList, TextInput, Image, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
 export default function SearchItem(dataArray){
     return(
         <View style={styles.container}>
         <TouchableOpacity style={styles.item}>
-        <Image source={{uri:dataArray.pic}} style={styles.img} resizeMode="contain" />
+        <Image source={{uri:dataArray.pic}} style={styles.img} resizeMode="cover" />
     <Text style={styles.text}>{dataArray.name}</Text>
         </TouchableOpacity>
         </View>
@@ -14,31 +14,33 @@ export default function SearchItem(dataArray){
 
 const styles= StyleSheet.create({
     container:{
-       backgroundColor:"#1f1f1f",
+       backgroundColor:"white",
        alignItems:"center",
        alignContent:"center",
        padding:10
     },
     item:{
-        backgroundColor:"black",
+        backgroundColor:"white",
         width:"100%",
         height:100,
         flexDirection:"row",
         alignContent:"center",
         alignItems:"center",
-        borderWidth:2,
-        borderColor:"#3d3d3d",
+        borderWidth:1,
+        borderColor:"white",
         borderRadius:20,
-        padding:15
+        padding:15,
+        elevation:10
     },
     img:{
        width:70,
        height:70,
-      borderRadius:200
+      borderRadius:35
     },
     text:{
-       color:"white",
-       fontSize:18,
+       color:"black",
+       fontWeight:"bold",
+       fontSize:16,
        marginLeft:15
     },
 })
