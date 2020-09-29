@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "human": "http://www.wikidata.org/entity/Q22979",
+    "humanLabel": "Daniela Katzenberger",
+    "picture": "http://commons.wikimedia.org/wiki/Special:FilePath/Frankfurter%20Buchmesse%202011%20-%20Daniela%20Katzenberger%202.JPG"
+  },
+  {
+    "id": 2,
+    "human": "http://www.wikidata.org/entity/Q23261",
+    "humanLabel": "Hideaki Anno",
+    "picture": "http://commons.wikimedia.org/wiki/Special:FilePath/Hideaki%20Anno.jpg"
+  },
+  {
+    "id": 3,
+    "human": "http://www.wikidata.org/entity/Q23261",
+    "humanLabel": "Hideaki Anno",
+    "picture": "http://commons.wikimedia.org/wiki/Special:FilePath/Hideaki%20Anno%20cropped%201%20Hideaki%20Anno%2020141030%202.jpg"
+  },
+  {
+    "id": 4,
+    "human": "http://www.wikidata.org/entity/Q23301",
+    "humanLabel": "Roberto Benigni",
+    "picture": "http://commons.wikimedia.org/wiki/Special:FilePath/Roberto%20Benigni-5765.jpg"
+  },
+  {
+    "id": 5,
+    "human": "http://www.wikidata.org/entity/Q23359",
+    "humanLabel": "Taylor Lautner",
+    "picture": "http://commons.wikimedia.org/wiki/Special:FilePath/Taylor%20Lautner%202011.jpg"
+  }
+]
