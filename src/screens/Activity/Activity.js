@@ -27,7 +27,9 @@ function Activity() {
                 pic={item['pic']}
               />
             );
-          }}></FlatList>
+          }}
+                  keyExtractor={(item, index) => index.toString()}
+          ></FlatList>
       </View>
     </View>
   );
