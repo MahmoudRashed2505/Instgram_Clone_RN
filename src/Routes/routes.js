@@ -10,6 +10,7 @@ import Profile from '../screens/Profile/Profile';
 import Activity from '../screens/Activity/Activity';
 import SearchComp from '../screens/Search/SearchComp';
 import Home from '../screens/Home/Home';
+import { HeaderTitle } from '@react-navigation/stack';
 
 const Tab = createBottomTabNavigator();
 
@@ -22,7 +23,10 @@ export default function routes() {
                         tabBarIcon: ({focused}) => (
                             <Icon name={focused ? name = "home" :"home-outline" } color={"black"} size={36}  />
                         ),
+                      tabBarLabel:"hello"
+                       
                     }}
+                    
                     />
                 <Tab.Screen name="Search" component={SearchComp} 
                     options={{

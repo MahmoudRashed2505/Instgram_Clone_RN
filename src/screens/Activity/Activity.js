@@ -8,6 +8,9 @@ function Activity() {
   const DATA = query;
   return (
     <View style={styles.container}>
+        <View style={styles.bar}>
+            <Text style={styles.txtBar}>Activity</Text>
+        </View>
       <View style={styles.cardContainer}>
         <FollowCard />
       </View>
@@ -43,7 +46,7 @@ const styles = StyleSheet.create({
   },
   cardContainer: {
     alignItems: 'center',
-    marginTop: 30,
+    marginTop: 20,
   },
   txt: {
     paddingLeft: 10,
@@ -51,6 +54,20 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: 'black',
   },
+  bar:{
+      width: "100%",
+      height: 55,
+      backgroundColor: "white",
+      //borderBottomWidth:0.5,
+      //borderBottomColor:"black",
+      elevation:5
+  },
+  txtBar:{
+        padding:20,
+        fontSize:20,
+        fontWeight:"500",
+        color:"black"
+  }
 });
 
 export default Activity;
