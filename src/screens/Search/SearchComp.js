@@ -17,7 +17,6 @@ export default function SearchComp() {
         renderItem={({item}) => {
           return <SearchItem name={item['humanLabel']} pic={item['picture']} />;
         }}></FlatList>
-      <SearchItem />
     </View>
   );
 }
