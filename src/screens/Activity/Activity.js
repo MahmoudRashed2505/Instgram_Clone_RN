@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
   cardContainer: {
     alignItems: 'center',
     marginTop: 20,
+    
   },
   txt: {
     paddingLeft: 10,
