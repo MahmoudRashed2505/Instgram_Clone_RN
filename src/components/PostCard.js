@@ -23,20 +23,20 @@ const styles = StyleSheet.create({
     borderRadius: 15,
     elevation: 10,
     backgroundColor: 'white',
-    marginHorizontal: 10,
+    marginHorizontal: 5,
     marginVertical: 10,
     display: 'flex',
     flexDirection: 'row',
   },
   card: {
     flexDirection: 'row',
+    width: '98%',
   },
   img: {
     width: 60,
     height: 60,
     borderRadius: 5,
-    marginTop: 10,
-    marginRight: 15,
+    marginTop: 20,
   },
   profile: {
     width: 60,

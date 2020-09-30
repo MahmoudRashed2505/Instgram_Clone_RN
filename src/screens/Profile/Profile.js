@@ -10,17 +10,17 @@ import {
 } from 'react-native';
 import ProfileHeader from '../../components/ProfileHeader';
 import ProfileInfo from '../../components/ProfileInfo';
-import ImageGalleryComp from '../../components/testImg';
+import ImageGalleryComp from '../../components/Posts';
 
 const width = Dimensions.get('window').width;
 
 export default function Profile() {
   return (
     <View>
-      <ProfileHeader />
+      <ProfileHeader username="mahmoudrashed98" />
       <ScrollView style={{marginBottom: 80}}>
         <View style={styles.container}>
-          <ProfileInfo />
+          <ProfileInfo fullname="Mahmoud Rashed" />
           <View style={styles.controlProfile}>
             <TouchableOpacity
               style={{flex: 0.5, alignItems: 'center'}}

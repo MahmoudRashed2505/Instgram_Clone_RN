@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     backgroundColor: 'white',
+    marginBottom: 60,
   },
   cardContainer: {
     alignItems: 'center',

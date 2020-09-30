@@ -1,10 +1,28 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
+import {FlatList} from 'react-native-gesture-handler';
+import query from '../assets/JSON/Search Query.json';
+import FeedCard from './FeedCard';
+
+const Data = query;
+var imgs = Data.map((item) => {
+  return {uri: item['picture']};
+});
 
 export default function Feed() {
   return (
-    <View>
-      <Text>I am Feed</Text>
+    <View style={{width: '100%', marginLeft: 20}}>
+      <FlatList
+        data={Data}
+        renderItem={({item}) => {
+          return (
+            <FeedCard
+              username={item['humanLabel']}
+              profilePic={item['picture']}
+            />
+          );
+        }}
+      />
     </View>
   );
 }
