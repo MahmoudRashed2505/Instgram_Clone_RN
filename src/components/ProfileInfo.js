@@ -5,13 +5,7 @@ export default function ProfileInfo(props) {
   return (
     <View style={styles.card}>
       <View style={styles.imgConnectionContainer}>
-        <Image
-          source={{
-            uri:
-              'https://avatars1.githubusercontent.com/u/37276859?s=400&u=67b9dd2ae3a13f3cf804921cfa44f0487da5785a&v=4',
-          }}
-          style={styles.profilePic}
-        />
+        <Image source={{uri: props.profilePic}} style={styles.profilePic} />
         <View style={styles.connections}>
           <TouchableOpacity
             style={styles.connectionsContainer}
@@ -42,7 +36,7 @@ export default function ProfileInfo(props) {
         </Text>
         <TouchableOpacity onPress={() => {}}>
           <Text style={{color: '#34bdeb', margin: 4, marginRight: 6}}>
-            https://github.com/MahmoudRashed2505
+            https://github.com/MahmoudRashed2505/Instgram_Clone_RN
           </Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.editProfile} onPress={() => {}}>

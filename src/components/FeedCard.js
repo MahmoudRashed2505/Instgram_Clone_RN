@@ -1,11 +1,16 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 export default function FeedCard(props) {
+  const navigation = useNavigation();
+  const data = {fullname: 'props.fullname', profilePic: 'props.profilePic'};
   return (
     <View style={styles.card}>
       <View style={styles.headerContainer}>
-        <TouchableOpacity style={styles.header} onPress={() => {}}>
+        <TouchableOpacity
+          style={styles.header}
+          onPress={() => navigation.navigate('User', {data})}>
           <Image style={styles.profilePic} source={{uri: props.profilePic}} />
           <Text style={styles.username}>{props.username}</Text>
         </TouchableOpacity>
