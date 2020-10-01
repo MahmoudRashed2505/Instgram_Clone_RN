@@ -1,14 +1,30 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import Feed from '../../components/Feed';
-import Stories from '../../components/Stories';
+import TopBar from '../../components/TopBar';
+import StoryComp from '../Stories/StoryComp';
 
 export default function Home() {
   return (
     <View style={{flex: 1, alignItems: 'center'}}>
-      <Text>Welcome To Home Screen</Text>
-      <Stories />
-      <Feed />
+      <TopBar />
+      <StoryComp style={styles.card} />
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  card: {
+    borderRadius: 15,
+    elevation: 10,
+    backgroundColor: '#fff',
+    shadowOffset: {width: 1, height: 1},
+    shadowColor: '#333',
+    shadowOpacity: 0.3,
+    shadowRadius: 2,
+    marginHorizontal: 10,
+    marginVertical: 10,
+    display: 'flex',
+    flexDirection: 'column',
+  },
+});
