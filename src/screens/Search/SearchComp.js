@@ -16,8 +16,7 @@ export default function SearchComp() {
         data={DATA}
         renderItem={({item}) => {
           return <SearchItem name={item['humanLabel']} pic={item['picture']} />;
-        }}
-              keyExtractor={(item, index) => index.toString()}/>
+        }}></FlatList>
     </View>
   );
 }
