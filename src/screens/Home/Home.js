@@ -1,16 +1,15 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+import { Header } from 'react-native/Libraries/NewAppScreen';
 import Feed from '../../components/Feed';
-import StoryComp from '../Stories/StoryComp'
-
-
+import Stories from '../../components/Stories';
+import TopBar from '../../components/TopBar';
+import StoryComp from '../Stories/StoryComp
 export default function Home() {
   return (
     <View style={{flex: 1, alignItems: 'center'}}>
-      
-      <Text>Welcome To Home Screen </Text>
-    {<StoryComp/>}
-      <Feed />
-    </View>
+        <TopBar/>
+      <Stories />
+
   );
 }
