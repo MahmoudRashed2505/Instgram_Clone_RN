@@ -1,49 +1,34 @@
 import React from 'react';
 import {View, Text, TouchableOpacity, Image, StyleSheet} from 'react-native';
 
-export default function ProfileInfo() {
+export default function ProfileInfo(props) {
   return (
     <View style={styles.card}>
       <View style={styles.imgConnectionContainer}>
-        <Image
-          source={{
-            uri:
-              'https://avatars1.githubusercontent.com/u/37276859?s=400&u=67b9dd2ae3a13f3cf804921cfa44f0487da5785a&v=4',
-          }}
-          style={styles.profilePic}
-        />
+        <Image source={{uri: props.profilePic}} style={styles.profilePic} />
         <View style={styles.connections}>
           <TouchableOpacity
             style={styles.connectionsContainer}
             onPress={() => {}}>
-            <Text style={styles.connectionText}>
-              {' '}
-              3{'\n'}
-              <Text style={{fontWeight: 'bold'}}>Posts</Text>
-            </Text>
+            <Text style={styles.connectionText}>3</Text>
+            <Text>Posts</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.connectionsContainer}
             onPress={() => {}}>
-            <Text style={styles.connectionText}>
-              {' '}
-              123{'\n'}
-              <Text style={{fontWeight: 'bold'}}>Followers</Text>
-            </Text>
+            <Text style={styles.connectionText}>250</Text>
+            <Text>Followers</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.connectionsContainer}
             onPress={() => {}}>
-            <Text style={styles.connectionText}>
-              {' '}
-              250{'\n'}
-              <Text style={{fontWeight: 'bold'}}>Following</Text>
-            </Text>
+            <Text style={styles.connectionText}>800</Text>
+            <Text>Following</Text>
           </TouchableOpacity>
         </View>
       </View>
       <View style={styles.bioInformationContainer}>
-        <Text style={{fontWeight: 'bold', margin: 5}}> Mahmoud Rashed </Text>
+        <Text style={{fontWeight: 'bold', margin: 5}}> {props.fullname} </Text>
         <Text style={{margin: 4}}>
           {' '}
           Computer Science Student {'\n'} Cairo Citizin {'\n'} React Native
@@ -51,7 +36,7 @@ export default function ProfileInfo() {
         </Text>
         <TouchableOpacity onPress={() => {}}>
           <Text style={{color: '#34bdeb', margin: 4, marginRight: 6}}>
-            https://github.com/MahmoudRashed2505
+            https://github.com/MahmoudRashed2505/Instgram_Clone_RN
           </Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.editProfile} onPress={() => {}}>
@@ -92,14 +77,18 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    marginLeft: 10,
   },
   connectionsContainer: {
-    marginLeft: 5,
+    marginLeft: 10,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
   },
   connectionText: {
     padding: 2,
     margin: 5,
+    fontWeight: 'bold',
   },
   profilePic: {
     width: 100,

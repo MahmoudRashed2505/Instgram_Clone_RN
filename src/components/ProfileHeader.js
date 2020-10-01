@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
 
-export default function ProfileHeader() {
+export default function ProfileHeader(props) {
   return (
     <View style={styles.header}>
       <TouchableOpacity onPress={() => {}}>
@@ -10,7 +10,7 @@ export default function ProfileHeader() {
           style={styles.addBtn}
         />
       </TouchableOpacity>
-      <Text style={styles.Text}>mahmoudhossam98</Text>
+      <Text style={styles.Text}>{props.username}</Text>
       <TouchableOpacity onPress={() => {}}>
         <Image
           source={require('../assets/Images/down-arrow.png')}

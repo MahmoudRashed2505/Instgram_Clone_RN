@@ -1,12 +1,13 @@
 import React, {Component} from 'react';
-import {
-  StyleSheet,
-  Text,
-  View,
-  TouchableWithoutFeedback,
-  Dimensions,
-  Modal,
-} from 'react-native';
+import {StyleSheet, View, TouchableWithoutFeedback} from 'react-native';
+
+import query from '../assets/JSON/Search Query.json';
+
+const Data = query;
+
+var imgs = Data.map((item) => {
+  return {uri: item['picture']};
+});
 
 import ImageGallery from './ImageCompnent';
 
@@ -14,21 +15,7 @@ export default class ImageGalleryComp extends Component {
   state = {
     modalVisible: false,
     modalImage: require('../assets/Images/test.jpg'),
-    images: [
-      require('../assets/Images/test.jpg'),
-      require('../assets/Images/test.jpg'),
-      require('../assets/Images/test.jpg'),
-      require('../assets/Images/test.jpg'),
-      require('../assets/Images/test.jpg'),
-      {
-        uri:
-          'http://commons.wikimedia.org/wiki/Special:FilePath/Frankfurter%20Buchmesse%202011%20-%20Daniela%20Katzenberger%202.JPG',
-      },
-      {
-        uri:
-          'http://commons.wikimedia.org/wiki/Special:FilePath/Hideaki%20Anno%20cropped%201%20Hideaki%20Anno%2020141030%202.jpg',
-      },
-    ],
+    images: imgs,
   };
 
   setModalVisible(visible, imagekey) {

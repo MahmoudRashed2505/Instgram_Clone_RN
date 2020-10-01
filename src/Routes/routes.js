@@ -10,7 +10,10 @@ import Profile from '../screens/Profile/Profile';
 import Activity from '../screens/Activity/Activity';
 import SearchComp from '../screens/Search/SearchComp';
 import Home from '../screens/Home/Home';
+import User from '../components/User';
+import {createStackNavigator} from '@react-navigation/stack';
 
+const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
 export default function routes() {
@@ -21,7 +24,7 @@ export default function routes() {
                     showLabel:false
                 }}
             >
-                <Tab.Screen name="Home" component={Home}
+                <Tab.Screen name="Home" component={HomeStack}
                     options={{   
                         tabBarIcon: ({focused}) => (
                             <Icon name={focused ? name = "home" :"home-outline" } color={"black"} size={28}  />
@@ -55,4 +58,23 @@ export default function routes() {
         </NavigationContainer>
     );
 }
+
+
+const HomeStack = () => {
+  return (
+    <Stack.Navigator>
+      <Stack.Screen
+        name="Home"
+        component={Home}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen name="User">
+        {(props)=>(
+      <User fullname={props.fullname} profilePic={props.profilePic}/>)}
+      </Stack.Screen>
+       
+      
+    </Stack.Navigator>
+  );
+};
 

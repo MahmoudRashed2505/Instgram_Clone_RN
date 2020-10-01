@@ -1,35 +1,34 @@
 import React from 'react';
 import {
   View,
-  Text,
-  StyleSheet,
-  Image,
-  TouchableOpacity,
   ScrollView,
-  Dimensions,
+  StyleSheet,
+  TouchableOpacity,
+  Image,
 } from 'react-native';
-import ProfileHeader from '../../components/ProfileHeader';
-import ProfileInfo from '../../components/ProfileInfo';
-import ImageGalleryComp from '../../components/Posts';
+import ProfileInfo from './ProfileInfo';
+import ImageGalleryComp from './Posts';
 
-const width = Dimensions.get('window').width;
 
-export default function Profile() {
-  return (
+
+
+export default function User(props) {
+  const data = navigation.getParam()
+  console.warn(props.navigation)
+  return(
     <View>
-      <ProfileHeader username="mahmoudrashed98" />
-      <ScrollView style={{marginBottom: 80}}>
+      <ScrollView style={{marginBottom: 10}}>
         <View style={styles.container}>
           <ProfileInfo
-            fullname="Mahmoud Rashed"
-            profilePic="https://avatars1.githubusercontent.com/u/37276859?s=460&u=67b9dd2ae3a13f3cf804921cfa44f0487da5785a&v=4"
+            fullname={fullname}
+            profilePic={img}
           />
           <View style={styles.controlProfile}>
             <TouchableOpacity
               style={{flex: 0.5, alignItems: 'center'}}
               onPress={() => {}}>
               <Image
-                source={require('../../assets/Images/grid.png')}
+                source={require('../assets/Images/grid.png')}
                 style={styles.controlBTNs}
               />
             </TouchableOpacity>
@@ -37,7 +36,7 @@ export default function Profile() {
               style={{flex: 0.5, alignItems: 'center'}}
               onPress={() => {}}>
               <Image
-                source={require('../../assets/Images/bookmark.png')}
+                source={require('../assets/Images/bookmark.png')}
                 style={styles.controlBTNs}
               />
             </TouchableOpacity>
@@ -47,17 +46,12 @@ export default function Profile() {
           <ImageGalleryComp />
         </View>
       </ScrollView>
-    </View>
-  );
-}
+      </View>
+  )
+} 
+   
 
 const styles = StyleSheet.create({
-  photoContainer: {
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    flexGrow: 0.4,
-  },
   container: {
     display: 'flex',
     flexDirection: 'column',
