@@ -11,7 +11,7 @@ var imgs = Data.map((item) => {
 
 export default function Feed() {
   return (
-    <View style={{width: '100%', marginLeft: 20}}>
+    <View style={{width: '100%', marginLeft: 10}}>
       <FlatList
         data={Data}
         renderItem={({item}) => {

@@ -9,6 +9,7 @@ export default function SearchComp() {
   return (
     <View style={styles.container}>
       <FlatList
+      showsHorizontalScrollIndicator={false}
         horizontal={true}
         data={DATA}
         renderItem={({item}) => {
@@ -21,11 +22,12 @@ export default function SearchComp() {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
-    width: '96%',
+    width: '90%',
     height: 110,
     alignContent: 'center',
     alignItems: 'center',
     borderRadius: 10,
     marginVertical: 10,
+    marginLeft:9
   },
 });

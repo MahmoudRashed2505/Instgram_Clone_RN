@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     shadowColor: '#333',
     shadowOpacity: 0.3,
     shadowRadius: 2,
-    marginHorizontal: 10,
+    marginHorizontal: 5,
     marginVertical: 10,
     display: 'flex',
     flexDirection: 'column',

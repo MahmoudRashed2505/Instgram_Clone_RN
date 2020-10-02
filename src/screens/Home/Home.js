@@ -1,14 +1,19 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
+import { ScrollView } from 'react-native-gesture-handler';
 import Feed from '../../components/Feed';
 import TopBar from '../../components/TopBar';
 import StoryComp from '../Stories/StoryComp';
 
 export default function Home() {
   return (
-    <View style={{flex: 1, alignItems: 'center'}}>
+    <View style={{alignItems: 'center'}}>
       <TopBar />
+      <ScrollView>
       <StoryComp style={styles.card} />
+      <Feed/>
+      </ScrollView>
+      
     </View>
   );
 }
