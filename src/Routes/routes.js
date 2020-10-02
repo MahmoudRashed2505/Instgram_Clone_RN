@@ -68,10 +68,8 @@ const HomeStack = () => {
         component={Home}
         options={{headerShown: false}}
       />
-      <Stack.Screen name="User">
-        {(props)=>(
-      <User fullname={props.fullname} profilePic={props.profilePic}/>)}
-      </Stack.Screen>
+      <Stack.Screen name="User" component={User}
+      />
        
       
     </Stack.Navigator>

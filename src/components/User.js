@@ -8,20 +8,21 @@ import {
 } from 'react-native';
 import ProfileInfo from './ProfileInfo';
 import ImageGalleryComp from './Posts';
-
-
-
+import { useNavigation } from '@react-navigation/native';
+import FeedCard from './FeedCard'
 
 export default function User(props) {
-  const data = navigation.getParam()
-  console.warn(props.navigation)
+    const navigation = useNavigation();
+ 
   return(
     <View>
       <ScrollView style={{marginBottom: 10}}>
         <View style={styles.container}>
           <ProfileInfo
-            fullname={fullname}
-            profilePic={img}
+            // fullname={props.fullname}
+            // profilePic={props.img}
+            username={props.route.params.name}
+            pic={props.route.params.pic}
           />
           <View style={styles.controlProfile}>
             <TouchableOpacity
