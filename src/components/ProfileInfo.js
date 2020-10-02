@@ -2,10 +2,11 @@ import React from 'react';
 import {View, Text, TouchableOpacity, Image, StyleSheet} from 'react-native';
 
 export default function ProfileInfo(props) {
+    console.log(props)
   return (
     <View style={styles.card}>
       <View style={styles.imgConnectionContainer}>
-        <Image source={{uri: props.profilePic}} style={styles.profilePic} />
+         <Image source={ props.pic ? {uri: props.pic } : {uri:props.profilePic}} style={styles.profilePic} /> 
         <View style={styles.connections}>
           <TouchableOpacity
             style={styles.connectionsContainer}
@@ -28,7 +29,8 @@ export default function ProfileInfo(props) {
         </View>
       </View>
       <View style={styles.bioInformationContainer}>
-        <Text style={{fontWeight: 'bold', margin: 5}}> {props.fullname} </Text>
+        <Text style={{ fontWeight: 'bold', margin: 5 }}>{props.username? props.username : props.fullname} </Text>
+        {/* <Text style={{fontWeight: 'bold', margin: 5}}> {props.fullname} </Text> */}
         <Text style={{margin: 4}}>
           {' '}
           Computer Science Student {'\n'} Cairo Citizin {'\n'} React Native
