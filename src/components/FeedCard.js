@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
     borderRadius: 80,
-    marginHorizontal: 10,
+    marginLeft:15,
     marginVertical: 10,
     resizeMode: 'cover',
   },
@@ -90,6 +90,7 @@ const styles = StyleSheet.create({
     width: 324,
     height: 350,
     resizeMode: 'stretch',
+    marginLeft:10
   },
   interactions: {
     display: 'flex',
