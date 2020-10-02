@@ -1,7 +1,9 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, Image,Dimensions} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import User from "./User"
+
+const width = Dimensions.get('window').width
+
 
 export default function FeedCard(props) {
   const navigation = useNavigation();
@@ -61,7 +63,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     display: 'flex',
     flexDirection: 'column',
-    width: '90%',
+    width: (width)-10,
   },
   headerContainer: {
     display: 'flex',

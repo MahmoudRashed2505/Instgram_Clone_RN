@@ -17,12 +17,14 @@ const width = Dimensions.get('window').width;
 export default function Profile() {
   return (
     <View>
-      <ProfileHeader username="mahmoudrashed98" />
+      <ProfileHeader username="team4_98" />
       <ScrollView style={{marginBottom: 80}}>
         <View style={styles.container}>
           <ProfileInfo
-            fullname="Mahmoud Rashed"
-            profilePic="https://avatars1.githubusercontent.com/u/37276859?s=460&u=67b9dd2ae3a13f3cf804921cfa44f0487da5785a&v=4"
+            fullname="Team 4"
+            profilePic="https://www.ibdaa.tn/TV/img/team4-logo.png"
+            isUser={false}
+            type="Edit Profile"
           />
           <View style={styles.controlProfile}>
             <TouchableOpacity

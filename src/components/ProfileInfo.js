@@ -11,7 +11,7 @@ export default function ProfileInfo(props) {
           <TouchableOpacity
             style={styles.connectionsContainer}
             onPress={() => {}}>
-            <Text style={styles.connectionText}>3</Text>
+            <Text style={styles.connectionText}>140</Text>
             <Text>Posts</Text>
           </TouchableOpacity>
           <TouchableOpacity
@@ -41,8 +41,8 @@ export default function ProfileInfo(props) {
             https://github.com/MahmoudRashed2505/Instgram_Clone_RN
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.editProfile} onPress={() => {}}>
-          <Text style={{fontWeight: 'bold', marginTop: 6}}>Edit Profile</Text>
+        <TouchableOpacity style={(props.isUser)? styles.followUser : styles.editProfile} onPress={() => {}}>
+          <Text style={{fontWeight: 'bold', marginTop: 6,color:"#fff"}}>{props.type}</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -114,4 +114,18 @@ const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'column',
   },
+  followUser:{
+    borderRadius: 10,
+    marginBottom: 15,
+    marginTop: 15,
+    height: 35,
+    marginLeft: 15,
+    marginRight: 4,
+    elevation: 10,
+    alignItems: 'center',
+    borderWidth: 1,
+    backgroundColor: '#0095f6',
+    width: '90%',
+    borderColor: '#fff',
+  }
 });

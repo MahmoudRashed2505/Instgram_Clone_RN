@@ -8,21 +8,17 @@ import {
 } from 'react-native';
 import ProfileInfo from './ProfileInfo';
 import ImageGalleryComp from './Posts';
-import { useNavigation } from '@react-navigation/native';
-import FeedCard from './FeedCard'
 
 export default function User(props) {
-    const navigation = useNavigation();
- 
   return(
     <View>
       <ScrollView style={{marginBottom: 10}}>
         <View style={styles.container}>
           <ProfileInfo
-            // fullname={props.fullname}
-            // profilePic={props.img}
             username={props.route.params.name}
             pic={props.route.params.pic}
+            isUser={true}
+            type="Follow"
           />
           <View style={styles.controlProfile}>
             <TouchableOpacity
