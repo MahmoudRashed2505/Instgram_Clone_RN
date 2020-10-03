@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
+import {View, StyleSheet, Image, TouchableOpacity} from 'react-native';
 
 export default function TopBar() {
   return (
@@ -7,7 +7,7 @@ export default function TopBar() {
       <TouchableOpacity>
         <Image
           source={require('./../assets/Images/photo-camera.png')}
-          style={{width: 30, height: 30, marginTop: 15}}
+          style={{width: 30, height: 30, marginTop: 15,marginLeft:10}}
         />
       </TouchableOpacity>
       <Image
@@ -17,7 +17,7 @@ export default function TopBar() {
       <TouchableOpacity>
         <Image
           source={require('./../assets/Images/s.png')}
-          style={{width: 30, height: 30, marginTop: 15}}
+          style={{width: 30, height: 30, marginTop: 15, marginRight:10}}
         />
       </TouchableOpacity>
     </View>
@@ -30,12 +30,11 @@ const styles = StyleSheet.create({
     height: 55,
     backgroundColor: 'white',
     flexDirection: 'row',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
   },
   img: {
     height: 40,
     width: 90,
-
     marginTop: 10,
     resizeMode: 'stretch',
   },

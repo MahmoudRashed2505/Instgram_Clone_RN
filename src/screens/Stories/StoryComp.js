@@ -22,7 +22,7 @@ export default function SearchComp() {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
-    width: '90%',
+    width: '95%',
     height: 110,
     alignContent: 'center',
     alignItems: 'center',
