@@ -1,13 +1,10 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity, Image,Dimensions} from 'react-native';
+import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-
-const width = Dimensions.get('window').width
-
 
 export default function FeedCard(props) {
   const navigation = useNavigation();
-  const data = {fullname: 'props.fullname', profilePic: 'props.profilePic'};
+  
   return (
     <View style={styles.card}>
       <View style={styles.headerContainer}>
@@ -63,7 +60,7 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     display: 'flex',
     flexDirection: 'column',
-    width: (width)-10,
+    width: "98%"
   },
   headerContainer: {
     display: 'flex',
@@ -87,7 +84,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   postPic: {
-    width: 324,
+    width: "95%",
     height: 350,
     resizeMode: 'stretch',
     marginLeft:10

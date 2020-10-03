@@ -2,7 +2,6 @@ import React from 'react';
 import {View, Text, TouchableOpacity, Image, StyleSheet} from 'react-native';
 
 export default function ProfileInfo(props) {
-    console.log(props)
   return (
     <View style={styles.card}>
       <View style={styles.imgConnectionContainer}>
@@ -30,11 +29,9 @@ export default function ProfileInfo(props) {
       </View>
       <View style={styles.bioInformationContainer}>
         <Text style={{ fontWeight: 'bold', margin: 5 }}>{props.username? props.username : props.fullname} </Text>
-        {/* <Text style={{fontWeight: 'bold', margin: 5}}> {props.fullname} </Text> */}
         <Text style={{margin: 4}}>
           {' '}
-          Computer Science Student {'\n'} Cairo Citizin {'\n'} React Native
-          Developer {'\n'} MERN Stack Developer
+          Computer Science Students {'\n'} Penta-value Trainees{'\n'} Mahmoud Rashed {'\n'} Ahmed Safwat {'\n'} Nada Eltayeb
         </Text>
         <TouchableOpacity onPress={() => {}}>
           <Text style={{color: '#34bdeb', margin: 4, marginRight: 6}}>
@@ -59,10 +56,10 @@ const styles = StyleSheet.create({
     marginRight: 4,
     elevation: 10,
     alignItems: 'center',
-    borderWidth: 1,
-    backgroundColor: '#fff',
+    //borderWidth: 1,
+    backgroundColor: '#0095f6',
     width: '90%',
-    borderColor: 'gray',
+    //borderColor: 'gray',
   },
   bioInformationContainer: {
     display: 'flex',

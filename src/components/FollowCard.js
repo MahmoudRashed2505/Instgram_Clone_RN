@@ -6,7 +6,7 @@ function FollowCard() {
     <View style={styles.container}>
       <TouchableOpacity style={styles.card}>
         <Image
-          source={require('../assets/Images/img.jpg')}
+        source={{uri:"https://www.ibdaa.tn/TV/img/team4-logo.png"}}
           style={styles.img}
         />
         <View style={{flexDirection: 'column'}}>

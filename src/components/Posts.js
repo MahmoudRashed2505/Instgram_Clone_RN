@@ -51,12 +51,13 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     flexWrap: 'wrap',
+    alignSelf:"center"
   },
   imageWrap: {
     margin: 2,
     padding: 2,
     height: 150,
-    width: 100,
+    width: 85,
     backgroundColor: '#fff',
     borderRadius: 8,
   },

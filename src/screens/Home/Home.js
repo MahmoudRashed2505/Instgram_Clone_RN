@@ -7,9 +7,9 @@ import StoryComp from '../Stories/StoryComp';
 
 export default function Home() {
   return (
-    <View style={{alignItems: 'center'}}>
+    <View style={{alignItems: 'center', justifyContent:"center"}}>
       <TopBar />
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
       <StoryComp style={styles.card} />
       <Feed/>
       </ScrollView>

@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
   menuBtn: {
     width: 25,
     height: 25,
-    marginLeft: 80,
+    marginLeft: 200,
   },
   arrow: {
     width: 15,
