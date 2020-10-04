@@ -62,6 +62,10 @@ $ react-native start
 react-native run-android
 ```
 
+ Walkthrough Gif
+----------
+<img src='https://github.com/MahmoudRashed2505/Instgram_Clone_RN/blob/master/Instagram%20Clone.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ## Team
 
 | <a href="https://github.com/MahmoudRashed2505" target="_blank">**Mahmoud Rashed**</a> | <a href="https://github.com/Ahmedsafwat101" target="_blank">**Ahmed Safwat**</a> | <a href="https://github.com/nadaaeltayeb" target="_blank">**Nada El Tayeb**</a> |
