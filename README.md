@@ -28,6 +28,13 @@ Check the Links Down Below to know more about how to setup your enviroment
 * [Node Js](https://nodejs.org/en/download/)
 * [React Native](https://reactnative.dev/docs/environment-setup)
 
+### API 
+As the access for Instagram API is not approachable we build our get JSON data from **Wikidata Query Service** and after this we host our JSON data on **ExtendsClass** it's a JOSN storage for free. After this we tested using **Postman** 
+* [Wikidata Query Service](https://query.wikidata.org/) 
+* [ExtendsClass](https://extendsclass.com/json-storage.html) 
+* [Our API](https://json.extendsclass.com/bin/6926f9143c99) 
+
+
 
 
 ### Instalation:
